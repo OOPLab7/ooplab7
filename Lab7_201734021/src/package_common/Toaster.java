@@ -20,4 +20,8 @@ public class Toaster extends Product implements Cooker{
 		return food;
 		
 	}
+	
+	toaster(String food){
+		this.food = food;
+	}
 }
