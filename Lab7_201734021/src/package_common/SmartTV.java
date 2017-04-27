@@ -4,6 +4,10 @@ public class SmartTV extends Product implements DataStorage,Networked {
 	
 	private int Channel;
 	
+	public SmartTV(double price, String name,int channel){
+		super(price, name);
+		this.Channel=channel;
+	}
 	@Override
 	public double getFreeCapacity(){
 		double capacity=12;
@@ -45,10 +49,7 @@ public class SmartTV extends Product implements DataStorage,Networked {
 		Channel = channel;
 	}
 	
-	public SmartTV(int channel){
-		
-		this.Channel=channel;
-	}
+
 	
 
 	

@@ -5,6 +5,12 @@ public class Laptop extends Product implements Networked,DataStorage{
 	double totalCapacity;
 	double usedCapacity;
 	
+	Laptop(double price, String name,double totalCapacity,double usedCapacity) {
+		super(price, name);
+		this.totalCapacity=totalCapacity;
+		this.usedCapacity=usedCapacity;	
+	}
+	
 	@Override
 	public double getFreeCapacity(){
 		return totalCapacity-usedCapacity;
@@ -12,7 +18,7 @@ public class Laptop extends Product implements Networked,DataStorage{
 	
 	@Override
 	public void format(){
-		System.out.println("format laptop");
+		System.out.println("format latop");
 	}
 	
 	@Override

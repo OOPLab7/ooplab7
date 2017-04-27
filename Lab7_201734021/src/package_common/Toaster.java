@@ -2,8 +2,10 @@ package package_common;
 
 public class Toaster extends Product implements Cooker{
 	
-	String food;
-	String name;
+	public Toaster(double price, String name){
+		super(price, name);
+
+	}
 	
 	@Override
 	public String getName() {
@@ -12,12 +14,9 @@ public class Toaster extends Product implements Cooker{
 	
 	@Override
 	public String prepareFood(){
-		return food;
+		return "food";
 		
 	}
 	
-	public Toaster(String food, String name){
-		this.food = food;
-		this.name = name;
-	}
+
 }
