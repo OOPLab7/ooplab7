@@ -2,9 +2,26 @@ package package_common;
 
 public class ProductTest {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	
+	public void testNetworked(){
+		
+		SmartTV ST = new SmartTV();
+		ST.isConnected();
+		ST.maxSpeed();
+	
 	}
+	
+	public void testCooker(){
+		
+	}
+
+
+	
+	public static void main(String[] args) {
+		
+		ProductTest pt = new ProductTest();	
+		
+		
+	
 
 }

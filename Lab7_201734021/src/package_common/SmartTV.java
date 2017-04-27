@@ -1,7 +1,9 @@
 package package_common;
 
 public class SmartTV extends Product implements DataStorage,Networked {
-
+	
+	private int Channel;
+	
 	@Override
 	public double getFreeCapacity(){
 		double capacity=12;
@@ -33,16 +35,15 @@ public class SmartTV extends Product implements DataStorage,Networked {
 		String name="get name";
 		return name;
 	}
-	
-	public int getChannel(){
-		
-		int channel=23;
-		return channel;
+
+	public int getChannel() {
+		return Channel;
+	}
+
+	public void setChannel(int channel) {
+		Channel = channel;
 	}
 	
-	public void setChannel(){
-		
-		System.out.println("Channel");
-	}
+
 	
 }
