@@ -3,7 +3,7 @@ package package_common;
 public class DataStorage {
 
 	public double getFreeCapacity(){
-		int a=3;
+		double a=3;
 		return a;
 	}
 	
