@@ -10,8 +10,8 @@ public class Toaster extends Cooker{
 	}
 	
 
-	public void toaster(){
-	
+	public void Toaster(){
+		return name;
 	}
 	@Override
 	public String prepareFood(){
