@@ -16,7 +16,8 @@ public class Toaster extends Product implements Cooker{
 		
 	}
 	
-	toaster(String food){
+	public Toaster(String food, String name){
 		this.food = food;
+		this.name = name;
 	}
 }
