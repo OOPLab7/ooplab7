@@ -5,18 +5,22 @@ public class Laptop extends Product implements Networked,DataStorage{
 	double totalCapacity;
 	double usedCapacity;
 	
+	@Override
 	public double getFreeCapacity(){
 		return totalCapacity-usedCapacity;
 	}
 	
+	@Override
 	public void format(){
-		System.out.println("format");
+		System.out.println("format laptop");
 	}
 	
+	@Override
 	public boolean isConnected(){
 		return true;
 	}
 	
+	@Override
 	public double maxSpeed(){
 		return 11;
 	}
