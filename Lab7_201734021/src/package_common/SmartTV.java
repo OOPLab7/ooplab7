@@ -1,12 +1,27 @@
 package package_common;
 
-public class SmartTV extends Product {
+public class SmartTV extends Product implements DataStorage,Networked {
 
+	@Override
+	public double getFreeCapacity(){
+		double capacity=12;
+		
+		return capacity;
+	}
+	
+	@Override
+	public void format(){
+		
+		System.out.println("format");
+	}
+	
+	@Override
 	public boolean isConnected(){
 		
 		return true;
 	}
 	
+	@Override
 	public double maxSpeed(){
 		
 		double max= 10;
