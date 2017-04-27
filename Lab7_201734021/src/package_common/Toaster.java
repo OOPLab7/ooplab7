@@ -11,4 +11,8 @@ public class Toaster {
 		return food;
 		
 	}
+	
+	public String getName() {
+		return name;
+	}
 }
