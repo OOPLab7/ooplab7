@@ -12,8 +12,5 @@ public class Laptop {
 	public void format(){
 		System.out.println("format");
 	}
-	
-	
-	
 
 }

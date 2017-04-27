@@ -5,6 +5,7 @@ public class Cooker {
 	String name;
 	String Robin_test;
 	String Quentin_Test;
+	String Max_Test;
 	public String prepareFood(){
 		return food;
 		
