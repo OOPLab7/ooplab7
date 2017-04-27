@@ -30,6 +30,7 @@ public class SmartTV extends Product implements DataStorage,Networked {
 		return max;
 	}
 	
+	@Override
 	public String getName(){
 		
 		String name="get name";
@@ -42,6 +43,11 @@ public class SmartTV extends Product implements DataStorage,Networked {
 
 	public void setChannel(int channel) {
 		Channel = channel;
+	}
+	
+	public SmartTV(int channel){
+		
+		this.Channel=channel;
 	}
 	
 
